@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>偽日本語メモ帳</title>
+    <style>
+        /* フォントの読み込み（持っている場合）または代替スタイルの設定 */
+        @font-face {
+            font-family: 'PseudoJapanese';
+            src: local('Electroharmonix'), local('Electro Harmonix');
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #00ff41; /* サイバーパンク風の緑 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        #memo-area {
+            width: 80%;
+            height: 60vh;
+            background: #222;
+            border: 2px solid #444;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 32px;
+            /* ここでフォントを適用 */
+            font-family: 'PseudoJapanese', 'Courier New', monospace;
+            color: #00ff41;
+            outline: none;
+            resize: none;
+            word-wrap: break-word;
+        }
+
+        .hint {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PSEUDO-JAPANESE NOTEPAD</h1>
+    
+    <textarea id="memo-area" placeholder="TYPE SOMETHING IN ENGLISH..."></textarea>
+
+    <div class="hint">
+        ※PCに 'Electroharmonix' 等のフォントが入っているとより「それっぽく」見えます。
+    </div>
+
+</body>
+</html>
